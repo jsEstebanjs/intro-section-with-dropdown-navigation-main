@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+$Almost-White:hsl(0, 0%, 98%);
+$Medium-Gray:hsl(0, 0%, 41%);
+$Almost-Black:hsl(0, 0%, 8%);
+
+body{
+    width: 100%;
+    font-family: 'Epilogue', sans-serif;
+    header{
+        width: 100%;
+        nav{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-between;
+            padding: 20px 10px 10px 10px;
+
+            div{
+                button{
+                    border: none;
+                    background-color: white;
+                    cursor:pointer;
+                }
+            }
+        }
+    }
+}
