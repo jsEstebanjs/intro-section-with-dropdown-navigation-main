@@ -12,7 +12,7 @@ body {
 body .opacity-on::before {
   content: "";
   width: 100%;
-  min-height: 570px;
+  min-height: 100vh;
   position: absolute;
   top: 0;
   left: 0;
@@ -71,7 +71,7 @@ body header nav div .main-hamburguer {
   background-color: hsl(0deg, 0%, 98%);
   width: 60%;
   color: hsl(0deg, 0%, 41%);
-  height: 570px;
+  height: 100vh;
 }
 body header nav div .main-hamburguer ul {
   display: flex;
