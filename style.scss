@@ -17,7 +17,7 @@ body{
     .opacity-on::before{
         content: "";
         width: 100%;
-        min-height: 570px;
+        min-height: 100vh;
         position: absolute;
         top: 0;
         left: 0;
@@ -77,7 +77,7 @@ body{
                     background-color: $Almost-White;
                     width: 60%;
                     color: $Medium-Gray;
-                    height: 570px;
+                    height: 100vh;
                     ul{
                         display: flex;
                         flex-direction: column;
