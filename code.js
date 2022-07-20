@@ -9,13 +9,14 @@ buttonHeader.classList.toggle("button-header-close")
 buttonHeader.classList.toggle("button-header-open")
 })
 
-const ulArrow = document.querySelectorAll(".ul-arrow-down") 
+const ulArrow = document.querySelectorAll(".main-item>a") 
 const mainUlTwho = document.querySelectorAll(".main-ul-two")
+const ulArrow2 = document.querySelectorAll(".ul-arrow-down")
 
 ulArrow.forEach((item,index) =>{
     item.addEventListener("click",() =>{
-        item.classList.toggle("ul-arrow-up");
-        item.classList.toggle("ul-arrow-down");
+        ulArrow2[index].classList.toggle("ul-arrow-up");
+        ulArrow2[index].classList.toggle("ul-arrow-down");
         if(item.addEventListener){
             
             mainUlTwho[index].classList.toggle("main-ul-two")
