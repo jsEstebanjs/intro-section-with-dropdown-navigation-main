@@ -6,6 +6,7 @@
 
 body {
   width: 100%;
+  min-width: 280px;
   font-family: "Epilogue", sans-serif;
 }
 body header {
@@ -22,4 +23,59 @@ body header nav div button {
   border: none;
   background-color: white;
   cursor: pointer;
+}
+
+.section-main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.section-main .section-img {
+  background-image: url(./intro-section-with-dropdown-navigation-main/images/image-hero-mobile.png);
+  width: 100%;
+  height: 240px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.section-main .section-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  align-items: center;
+}
+.section-main .section-info h2 {
+  font-weight: 700;
+  font-size: 28px;
+  color: hsl(0deg, 0%, 8%);
+}
+.section-main .section-info p {
+  color: hsl(0deg, 0%, 41%);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+  margin: 15px 0 15px 0;
+}
+.section-main .section-info button {
+  background-color: hsl(0deg, 0%, 8%);
+  color: hsl(0deg, 0%, 98%);
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  width: 120px;
+  padding: 10px;
+  font-family: "Epilogue", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+}
+.section-main .section-info .section-info-img {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.section-main .section-info .section-info-img img {
+  width: 25%;
+  height: 16px;
 }

@@ -9,6 +9,7 @@ $Almost-Black:hsl(0, 0%, 8%);
 
 body{
     width: 100%;
+    min-width: 280px;
     font-family: 'Epilogue', sans-serif;
     header{
         width: 100%;
@@ -29,3 +30,61 @@ body{
         }
     }
 }
+.section-main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    .section-img{
+        background-image: url(./intro-section-with-dropdown-navigation-main/images/image-hero-mobile.png);
+        width: 100%;
+        height: 240px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .section-info{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        align-items: center;
+        h2{
+            font-weight: 700;
+            font-size: 28px;
+            color: $Almost-Black;
+        }
+        p{
+            color: $Medium-Gray;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
+            text-align: center;
+            margin: 15px 0 15px 0;
+        }
+        button{
+            background-color: $Almost-Black;
+            color: $Almost-White;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+            width: 120px;
+            padding: 10px;
+            font-family: 'Epilogue', sans-serif;
+            font-size: 13px;
+            font-weight: 500;
+        }
+        .section-info-img{
+            margin-top: 30px;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+
+            img{
+                width:25%;
+                height: 16px;
+
+            }
+        }
+    }
+}
+
+//hasta 562 para tablet depues de eso probar lo de escritorio
