@@ -9,6 +9,16 @@ body {
   min-width: 280px;
   font-family: "Epilogue", sans-serif;
 }
+body .opacity-on::before {
+  content: "";
+  width: 100%;
+  min-height: 570px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.7;
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75));
+}
 body header {
   width: 100%;
 }
@@ -19,37 +29,145 @@ body header nav {
   justify-content: space-between;
   padding: 20px 10px 10px 10px;
 }
-body header nav div button {
+body header nav div .button-header-open {
+  position: absolute;
+  z-index: 2;
+  right: 16px;
+  border: none;
+  width: 32px;
+  background-color: hsl(0deg, 0%, 98%);
+  height: 18px;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-image: url(./intro-section-with-dropdown-navigation-main/images/icon-menu.svg);
+}
+body header nav div .button-header-close {
+  position: absolute;
+  z-index: 2;
+  right: 16px;
+  border: none;
+  width: 32px;
+  background-color: hsl(0deg, 0%, 98%);
+  height: 20px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-image: url(./intro-section-with-dropdown-navigation-main/images/icon-close-menu.svg);
+}
+body header nav div .main-hamburguer-default {
+  display: none;
+}
+body header nav div .main-hamburguer {
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding-top: 20px;
+  height: 100%;
+  background-color: hsl(0deg, 0%, 98%);
+  width: 60%;
+  color: hsl(0deg, 0%, 41%);
+  height: 570px;
+}
+body header nav div .main-hamburguer ul {
+  display: flex;
+  flex-direction: column;
+  transition: height 0.3s;
+  color: hsl(0deg, 0%, 41%);
+  list-style: none;
+}
+body header nav div .main-hamburguer ul .button-login {
   border: none;
   background-color: white;
-  cursor: pointer;
+  color: hsl(0deg, 0%, 41%);
+  padding: 10px;
+  margin: 8px 0 8px 0;
 }
-
-.section-main {
+body header nav div .main-hamburguer ul .button-register {
+  border: 1px solid hsl(0deg, 0%, 8%);
+  background-color: white;
+  color: hsl(0deg, 0%, 41%);
+  border-radius: 10px;
+  padding: 10px;
+}
+body header nav div .main-hamburguer ul .button-login:hover {
+  color: hsl(0deg, 0%, 8%);
+}
+body header nav div .main-hamburguer ul .button-register:hover {
+  color: hsl(0deg, 0%, 8%);
+}
+body header nav div .main-hamburguer ul .main-item {
+  --clip:0;
+  overflow: hidden;
+  margin: 8px 0 8px 0;
+}
+body header nav div .main-hamburguer ul .main-item a {
+  text-decoration: none;
+  color: hsl(0deg, 0%, 41%);
+}
+body header nav div .main-hamburguer ul .main-item a .ul-arrow-up {
+  background-image: url(./intro-section-with-dropdown-navigation-main/images/icon-arrow-up.svg);
+  width: 10px;
+  display: inline-block;
+  height: 6px;
+  background-repeat: no-repeat;
+  margin-left: 5px;
+}
+body header nav div .main-hamburguer ul .main-item a .ul-arrow-down {
+  background-image: url(./intro-section-with-dropdown-navigation-main/images/icon-arrow-down.svg);
+  width: 10px;
+  display: inline-block;
+  height: 6px;
+  background-repeat: no-repeat;
+  margin-left: 5px;
+}
+body header nav div .main-hamburguer ul .main-item .main-ul-two-height li {
+  margin: 8px 0px 8px 12px;
+  font-size: 14px;
+}
+body header nav div .main-hamburguer ul .main-item .main-ul-two-height li img {
+  margin-right: 10px;
+}
+body header nav div .main-hamburguer ul .main-item .main-ul-two {
+  height: 0;
+  transition: height 0.3s;
+}
+body header nav div .main-hamburguer ul .main-item .main-ul-two li {
+  margin: 8px 0px 8px 12px;
+  font-size: 14px;
+}
+body header nav div .main-hamburguer ul .main-item .main-ul-two li img {
+  margin-right: 10px;
+}
+body .section-main {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
-.section-main .section-img {
+body .section-main .section-img {
   background-image: url(./intro-section-with-dropdown-navigation-main/images/image-hero-mobile.png);
   width: 100%;
   height: 240px;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.section-main .section-info {
+body .section-main .section-info {
   width: 100%;
   display: flex;
   flex-direction: column;
   margin-top: 30px;
   align-items: center;
 }
-.section-main .section-info h2 {
+body .section-main .section-info h2 {
   font-weight: 700;
   font-size: 28px;
   color: hsl(0deg, 0%, 8%);
 }
-.section-main .section-info p {
+body .section-main .section-info p {
   color: hsl(0deg, 0%, 41%);
   font-size: 14px;
   font-weight: 500;
@@ -57,7 +175,7 @@ body header nav div button {
   text-align: center;
   margin: 15px 0 15px 0;
 }
-.section-main .section-info button {
+body .section-main .section-info button {
   background-color: hsl(0deg, 0%, 8%);
   color: hsl(0deg, 0%, 98%);
   border: none;
@@ -69,13 +187,20 @@ body header nav div button {
   font-size: 13px;
   font-weight: 500;
 }
-.section-main .section-info .section-info-img {
+body .section-main .section-info button:hover {
+  background-color: hsl(0deg, 0%, 98%);
+  color: hsl(0deg, 0%, 8%);
+  border: solid 1px black;
+}
+body .section-main .section-info .section-info-img {
   margin-top: 30px;
   display: flex;
   flex-direction: row;
   gap: 10px;
 }
-.section-main .section-info .section-info-img img {
+body .section-main .section-info .section-info-img img {
   width: 25%;
   height: 16px;
 }
+
+/*hasta 562 para tablet depues de eso probar lo de escritorio*/

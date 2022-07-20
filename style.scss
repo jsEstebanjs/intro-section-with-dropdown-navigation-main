@@ -7,10 +7,24 @@ $Almost-White:hsl(0, 0%, 98%);
 $Medium-Gray:hsl(0, 0%, 41%);
 $Almost-Black:hsl(0, 0%, 8%);
 
+$desaparecer: polygon(0 0,100% 0, 100% 0,0 0) ;
+$aparecer:polygon(0 0,100% 0, 100% 100%,0 100%);
+
 body{
     width: 100%;
     min-width: 280px;
     font-family: 'Epilogue', sans-serif;
+    .opacity-on::before{
+        content: "";
+        width: 100%;
+        min-height: 570px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0.7;
+        background: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75));
+    }
+
     header{
         width: 100%;
         nav{
@@ -21,10 +35,127 @@ body{
             padding: 20px 10px 10px 10px;
 
             div{
-                button{
+                .button-header-open{
+                    position: absolute;
+                    z-index: 2;
+                    right: 16px;
                     border: none;
-                    background-color: white;
+                    width: 32px;
+                    background-color: $Almost-White;
+                    height: 18px;
                     cursor:pointer;
+                    background-repeat: no-repeat;
+                    background-image: url(./intro-section-with-dropdown-navigation-main/images/icon-menu.svg);
+                }
+                .button-header-close{
+                    position: absolute;
+                    z-index: 2;
+                    right: 16px;
+                    border: none;
+                    width: 32px;
+                    background-color: $Almost-White;
+                    height: 20px;
+                    background-size: contain;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    cursor:pointer;
+                    background-image: url(./intro-section-with-dropdown-navigation-main/images/icon-close-menu.svg); 
+                }
+                .main-hamburguer-default{
+                    display: none;
+                }
+                .main-hamburguer{
+                    overflow-y: auto;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 20px;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    padding-top: 20px;
+                    height: 100%;
+                    background-color: $Almost-White;
+                    width: 60%;
+                    color: $Medium-Gray;
+                    height: 570px;
+                    ul{
+                        display: flex;
+                        flex-direction: column;
+                        transition: height .3s;
+                        color: $Medium-Gray;
+                        list-style: none;
+                        .button-login{
+                            border: none;
+                            background-color: white;
+                            color: $Medium-Gray;
+                            padding: 10px;
+                            margin: 8px 0 8px 0;
+                        }
+                        .button-register{
+                            border: 1px solid $Almost-Black;
+                            background-color: white;
+                            color: $Medium-Gray;
+                            border-radius: 10px;
+                            padding: 10px;
+                        }
+                        .button-login:hover{
+                            color: $Almost-Black;
+                        }
+                        .button-register:hover{
+                            color: $Almost-Black;
+                        }
+                        .main-item{
+                            --clip:0;
+                            overflow: hidden;
+                            margin: 8px 0 8px 0;
+                        
+
+                            a{
+                                text-decoration: none;
+                                color: $Medium-Gray;
+                                .ul-arrow-up{
+                                    background-image: url(./intro-section-with-dropdown-navigation-main/images/icon-arrow-up.svg);
+                                    width: 10px;
+                                    display: inline-block;
+                                    height: 6px;
+                                    background-repeat: no-repeat;
+                                    margin-left: 5px;
+
+        
+                                }
+                                .ul-arrow-down{
+                                    background-image: url(./intro-section-with-dropdown-navigation-main/images/icon-arrow-down.svg);
+                                    width: 10px;
+                                    display: inline-block;
+                                    height: 6px;
+                                    background-repeat: no-repeat;
+                                    margin-left: 5px;
+
+                            
+                                }
+                            }
+                            .main-ul-two-height{
+                                li{
+                                    margin: 8px 0px 8px 12px;
+                                    font-size: 14px;
+                                    img{
+                                        margin-right: 10px;
+                                    }
+                                }
+
+                            }
+                            .main-ul-two{
+                                height: 0;
+                                transition: height .3s;
+                                li{
+                                    margin: 8px 0px 8px 12px;
+                                    font-size: 14px;
+                                    img{
+                                        margin-right: 10px;
+                                    }
+                                }
+                            }
+                        }
                 }
             }
         }
@@ -72,6 +203,11 @@ body{
             font-size: 13px;
             font-weight: 500;
         }
+        button:hover{
+            background-color: $Almost-White;
+            color: $Almost-Black;
+            border: solid 1px black;
+        }
         .section-info-img{
             margin-top: 30px;
             display: flex;
@@ -87,4 +223,5 @@ body{
     }
 }
 
-//hasta 562 para tablet depues de eso probar lo de escritorio
+}
+/*hasta 562 para tablet depues de eso probar lo de escritorio*/

@@ -11,11 +11,41 @@
 <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+<div class="opacity">
     <header>
         <nav>
             <div><img src="./intro-section-with-dropdown-navigation-main/images/logo.svg" alt=""></div>
             <div>
-                <button><img src="./intro-section-with-dropdown-navigation-main/images/icon-menu.svg" alt=""></button>
+                <button class="button-header-open"></button>
+                <div class="main-hamburguer-default">
+                    <ul class="main-ul">
+                        <li class="main-item">
+                            <a href="#">Feactures<span class="ul-arrow-down"></span></a>
+                        <ul class="main-ul-two">
+                            <li><img src="./intro-section-with-dropdown-navigation-main/images/icon-todo.svg" alt=""><a href="#">Todo List</a></li>
+                            <li><img src="./intro-section-with-dropdown-navigation-main/images/icon-calendar.svg" alt=""><a href="#">Calendar</a></li>
+                            <li><img src="./intro-section-with-dropdown-navigation-main/images/icon-reminders.svg" alt=""><a href="#">Reminders</a></li>
+                            <li><img src="./intro-section-with-dropdown-navigation-main/images/icon-planning.svg" alt=""><a href="#">Planning</a></li>
+                        </ul>
+                        </li>
+                        <li class="main-item">
+                            <a href="#">Company<span class="ul-arrow-down"></span></a>
+                            <ul class="main-ul-two">
+                                <li><a href="#">History</a></li>
+                                <li><a href="#">Our Team</a></li>
+                                <li><a href="#">Blog</a></li>
+                            </ul>
+                        </li>
+                        <li class="main-item"><a href="#">Careers</a>
+
+                        </li>
+                        <li class="main-item"><a href="#">About</a>
+
+                        </li>
+                        <button class="button-login">Login</button>
+                        <button class="button-register">Register</button>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
@@ -33,5 +63,8 @@
             </div>
         </div>
     </section>
+</div>
+    <script src="./code.js"></script>
+
 </body>
 </html>
