@@ -9,14 +9,9 @@ buttonHeader.classList.toggle("button-header-close")
 buttonHeader.classList.toggle("button-header-open")
 })
 
-const ulArrow = document.querySelectorAll(".main-item>a") 
+const ulArrow = document.querySelectorAll(".activador-phone") 
 const mainUlTwho = document.querySelectorAll(".main-ul-two")
 const ulArrow2 = document.querySelectorAll(".ul-arrow-down")
-//desktop
-const ulArrowDesktop = document.querySelectorAll(".main-item-desktop>a")
-const desktopVertical = document.querySelectorAll(".main-vertical")
-
-
 ulArrow.forEach((item,index) =>{
     item.addEventListener("click",() =>{
         ulArrow2[index].classList.toggle("ul-arrow-up");
@@ -27,6 +22,20 @@ ulArrow.forEach((item,index) =>{
         }
 })
 })
+//desktop
+const ulArrowDesktop = document.querySelectorAll(".activador-desktop")
+const desktopVertical = document.querySelectorAll(".main-vertical")
+
+ulArrowDesktop.forEach((item,index) =>{
+    item.addEventListener("click",() =>{
+        ulArrow2[index].classList.toggle("ul-arrow-up");
+        ulArrow2[index].classList.toggle("ul-arrow-down");
+        if(item.addEventListener){
+            desktopVertical[index].classList.toggle("main-vertical-on")
+        }
+})
+})
+
 
 
 
