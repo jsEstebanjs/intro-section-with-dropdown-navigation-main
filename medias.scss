@@ -1,5 +1,96 @@
 @media (min-width: 570px) {
+$Almost-White:hsl(0, 0%, 98%);
+$Medium-Gray:hsl(0, 0%, 41%);
+$Almost-Black:hsl(0, 0%, 8%);
     body{
+        header{
+            nav{
+                .buttons-desktop{
+                    display: flex;
+                    flex-direction: row;
+                    .button-login{
+                        border: none;
+                        background-color: $Almost-White;
+                        color: $Medium-Gray;
+                        width: 80px;
+                        border-radius: 10px;
+                        margin: 8px 0 8px 0;
+                        font-size: 14px;
+                        font-weight: 500;
+                    }
+                    .button-register{
+                        font-size: 14px;
+                        font-weight: 500;
+                        border: 1px solid $Almost-Black;
+                        background-color: $Almost-White;
+                        color: $Medium-Gray;
+                        border-radius: 10px;
+                        width: 80px;
+
+                    }
+                    .button-login:hover{
+                        color: $Almost-Black;
+                    }
+                    .button-register:hover{
+                        color: $Almost-White;
+                        background-color: $Almost-Black;
+                    }
+                }
+                .div-img-header{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    .container-nav-desktop{
+                        display: block;
+                        margin-left: 20px;
+                        ul{
+                            font-size: 14px;
+                            gap: 20px;
+                            display: flex;
+                            flex-direction: row;
+                            list-style: none;
+                            li{
+                                .ul-arrow-up{
+                                    background-image: url(./intro-section-with-dropdown-navigation-main/images/icon-arrow-up.svg);
+                                    width: 10px;
+                                    display: inline-block;
+                                    height: 6px;
+                                    background-repeat: no-repeat;
+                                    margin-left: 5px;
+
+        
+                                }
+                                .ul-arrow-down{
+                                    background-image: url(./intro-section-with-dropdown-navigation-main/images/icon-arrow-down.svg);
+                                    width: 10px;
+                                    display: inline-block;
+                                    height: 6px;
+                                    background-repeat: no-repeat;
+                                    margin-left: 5px;
+
+                            
+                                }
+                                a{
+                                    text-decoration: none;
+                                    color: $Medium-Gray;
+                                }
+                                a:hover{
+                                    color: $Almost-Black;
+
+                                }
+                            }
+                        }
+
+                    }
+                }
+
+                div{
+                    .button-header-open{
+                        display: none;
+                    }
+                }
+            }
+        }
         .section-main{
             display: flex;
             flex-direction: row;
@@ -49,4 +140,3 @@
     }
 
 }
-

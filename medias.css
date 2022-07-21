@@ -1,4 +1,76 @@
 @media (min-width: 570px) {
+  body header nav .buttons-desktop {
+    display: flex;
+    flex-direction: row;
+  }
+  body header nav .buttons-desktop .button-login {
+    border: none;
+    background-color: hsl(0deg, 0%, 98%);
+    color: hsl(0deg, 0%, 41%);
+    width: 80px;
+    border-radius: 10px;
+    margin: 8px 0 8px 0;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  body header nav .buttons-desktop .button-register {
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid hsl(0deg, 0%, 8%);
+    background-color: hsl(0deg, 0%, 98%);
+    color: hsl(0deg, 0%, 41%);
+    border-radius: 10px;
+    width: 80px;
+  }
+  body header nav .buttons-desktop .button-login:hover {
+    color: hsl(0deg, 0%, 8%);
+  }
+  body header nav .buttons-desktop .button-register:hover {
+    color: hsl(0deg, 0%, 98%);
+    background-color: hsl(0deg, 0%, 8%);
+  }
+  body header nav .div-img-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  body header nav .div-img-header .container-nav-desktop {
+    display: block;
+    margin-left: 20px;
+  }
+  body header nav .div-img-header .container-nav-desktop ul {
+    font-size: 14px;
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+  }
+  body header nav .div-img-header .container-nav-desktop ul li .ul-arrow-up {
+    background-image: url(./intro-section-with-dropdown-navigation-main/images/icon-arrow-up.svg);
+    width: 10px;
+    display: inline-block;
+    height: 6px;
+    background-repeat: no-repeat;
+    margin-left: 5px;
+  }
+  body header nav .div-img-header .container-nav-desktop ul li .ul-arrow-down {
+    background-image: url(./intro-section-with-dropdown-navigation-main/images/icon-arrow-down.svg);
+    width: 10px;
+    display: inline-block;
+    height: 6px;
+    background-repeat: no-repeat;
+    margin-left: 5px;
+  }
+  body header nav .div-img-header .container-nav-desktop ul li a {
+    text-decoration: none;
+    color: hsl(0deg, 0%, 41%);
+  }
+  body header nav .div-img-header .container-nav-desktop ul li a:hover {
+    color: hsl(0deg, 0%, 8%);
+  }
+  body header nav div .button-header-open {
+    display: none;
+  }
   body .section-main {
     display: flex;
     flex-direction: row;

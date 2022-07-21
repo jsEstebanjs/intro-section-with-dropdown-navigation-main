@@ -6,6 +6,21 @@
 $Almost-White:hsl(0, 0%, 98%);
 $Medium-Gray:hsl(0, 0%, 41%);
 $Almost-Black:hsl(0, 0%, 8%);
+body{
+    header{
+        nav{
+            .div-img-header{
+                .container-nav-desktop{
+                    display: none;
+                }
+            }
+            .buttons-desktop{
+                display: none;
+            }
+        }
+    }
+}
+
 
 body{
     width: 100%;

@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+body header nav .div-img-header .container-nav-desktop {
+  display: none;
+}
+body header nav .buttons-desktop {
+  display: none;
+}
+
 body {
   width: 100%;
   min-width: 280px;
