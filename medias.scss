@@ -49,6 +49,7 @@ $Almost-Black:hsl(0, 0%, 8%);
                             display: flex;
                             flex-direction: row;
                             list-style: none;
+                            width: max-content;
                             li{
                                 .main-vertical{
                                     display: none;
@@ -66,8 +67,7 @@ $Almost-Black:hsl(0, 0%, 8%);
                                         }
                                     }
                                 }
-                                .main-vertical-on{
-
+                                .main-vertical:hover{
                                     display: block;
                                 }
                                 .ul-arrow-up{
@@ -99,6 +99,13 @@ $Almost-Black:hsl(0, 0%, 8%);
 
                                 }
                             }
+                            li:hover .main-vertical{
+                                display: block;
+                            }
+                            li:hover .ul-arrow-down{
+                                background-image: url(./intro-section-with-dropdown-navigation-main/images/icon-arrow-up.svg);
+                            }
+                            
                         }
 
                     }
@@ -159,4 +166,8 @@ $Almost-Black:hsl(0, 0%, 8%);
         }
     }
 
+}
+
+li:hover .ul-arrow-down{
+    background-image: url(./intro-section-with-dropdown-navigation-main/images/icon-arrow-up.svg);
 }

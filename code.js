@@ -22,19 +22,8 @@ ulArrow.forEach((item,index) =>{
         }
 })
 })
-//desktop
-const ulArrowDesktop = document.querySelectorAll(".activador-desktop")
-const desktopVertical = document.querySelectorAll(".main-vertical")
 
-ulArrowDesktop.forEach((item,index) =>{
-    item.addEventListener("click",() =>{
-        ulArrow2[index].classList.toggle("ul-arrow-up");
-        ulArrow2[index].classList.toggle("ul-arrow-down");
-        if(item.addEventListener){
-            desktopVertical[index].classList.toggle("main-vertical-on")
-        }
-})
-})
+
 
 
 
