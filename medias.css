@@ -45,6 +45,27 @@
     flex-direction: row;
     list-style: none;
   }
+  body header nav .div-img-header .container-nav-desktop ul li .main-vertical {
+    display: none;
+    list-style: none;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    position: absolute;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: hsl(0deg, 0%, 98%);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  body header nav .div-img-header .container-nav-desktop ul li .main-vertical li {
+    margin: 10px 0 10px 0;
+  }
+  body header nav .div-img-header .container-nav-desktop ul li .main-vertical li img {
+    margin-right: 10px;
+  }
+  body header nav .div-img-header .container-nav-desktop ul li .main-vertical-on {
+    display: block;
+  }
   body header nav .div-img-header .container-nav-desktop ul li .ul-arrow-up {
     background-image: url(./intro-section-with-dropdown-navigation-main/images/icon-arrow-up.svg);
     width: 10px;

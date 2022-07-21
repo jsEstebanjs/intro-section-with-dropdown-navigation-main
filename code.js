@@ -12,13 +12,16 @@ buttonHeader.classList.toggle("button-header-open")
 const ulArrow = document.querySelectorAll(".main-item>a") 
 const mainUlTwho = document.querySelectorAll(".main-ul-two")
 const ulArrow2 = document.querySelectorAll(".ul-arrow-down")
+//desktop
+const ulArrowDesktop = document.querySelectorAll(".main-item-desktop>a")
+const desktopVertical = document.querySelectorAll(".main-vertical")
+
 
 ulArrow.forEach((item,index) =>{
     item.addEventListener("click",() =>{
         ulArrow2[index].classList.toggle("ul-arrow-up");
         ulArrow2[index].classList.toggle("ul-arrow-down");
         if(item.addEventListener){
-            
             mainUlTwho[index].classList.toggle("main-ul-two")
             mainUlTwho[index].classList.toggle("main-ul-two-height")
         }
