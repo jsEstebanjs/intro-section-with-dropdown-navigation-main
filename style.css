@@ -82,14 +82,14 @@ body header nav div .main-hamburguer ul {
 }
 body header nav div .main-hamburguer ul .button-login {
   border: none;
-  background-color: white;
+  background-color: hsl(0deg, 0%, 98%);
   color: hsl(0deg, 0%, 41%);
   padding: 10px;
   margin: 8px 0 8px 0;
 }
 body header nav div .main-hamburguer ul .button-register {
   border: 1px solid hsl(0deg, 0%, 8%);
-  background-color: white;
+  background-color: hsl(0deg, 0%, 98%);
   color: hsl(0deg, 0%, 41%);
   border-radius: 10px;
   padding: 10px;
@@ -104,6 +104,9 @@ body header nav div .main-hamburguer ul .main-item {
   --clip:0;
   overflow: hidden;
   margin: 8px 0 8px 0;
+}
+body header nav div .main-hamburguer ul .main-item a:hover {
+  color: hsl(0deg, 0%, 8%);
 }
 body header nav div .main-hamburguer ul .main-item a {
   text-decoration: none;

@@ -140,8 +140,3 @@
     background-position: center;
   }
 }
-@media (max-width: 562px) {
-  .buttons-desktop {
-    display: none;
-  }
-}

@@ -7,9 +7,6 @@ $Almost-White:hsl(0, 0%, 98%);
 $Medium-Gray:hsl(0, 0%, 41%);
 $Almost-Black:hsl(0, 0%, 8%);
 
-$desaparecer: polygon(0 0,100% 0, 100% 0,0 0) ;
-$aparecer:polygon(0 0,100% 0, 100% 100%,0 100%);
-
 body{
     width: 100%;
     min-width: 280px;
@@ -86,14 +83,14 @@ body{
                         list-style: none;
                         .button-login{
                             border: none;
-                            background-color: white;
+                            background-color: $Almost-White;
                             color: $Medium-Gray;
                             padding: 10px;
                             margin: 8px 0 8px 0;
                         }
                         .button-register{
                             border: 1px solid $Almost-Black;
-                            background-color: white;
+                            background-color: $Almost-White;
                             color: $Medium-Gray;
                             border-radius: 10px;
                             padding: 10px;
@@ -109,7 +106,9 @@ body{
                             overflow: hidden;
                             margin: 8px 0 8px 0;
                         
-
+                            a:hover{
+                                color: $Almost-Black;
+                            }
                             a{
                                 text-decoration: none;
                                 color: $Medium-Gray;
