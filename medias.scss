@@ -1,165 +1,52 @@
-
-@media (min-width: 562px) {
-$Almost-White:hsl(0, 0%, 98%);
-$Medium-Gray:hsl(0, 0%, 41%);
-$Almost-Black:hsl(0, 0%, 8%);
-
-$desaparecer: polygon(0 0,100% 0, 100% 0,0 0) ;
-$aparecer:polygon(0 0,100% 0, 100% 100%,0 100%);
+@media (min-width: 570px) {
     body{
-        max-width: 100%;
-        width: 100%;
-        flex-direction: row;
-        .button-header-open{
-            display: none;
-
-        }
-        header{
-        nav{
-            div{
-                display: flex;
-                align-items: center;
-            }
-            .main-menu-desktop{
-                display: flex;
-                gap: 20px;
-                ul{
-                    display: flex;
-                    flex-direction: row;
-                    transition: height .3s;
-                    color: $Medium-Gray;
-                    list-style: none;
-                    .main-item{
-                        --clip:0;
-                        overflow: hidden;
-                        margin: 8px 0 8px 0;
-                    
-
-                        a{
-                            text-decoration: none;
-                            color: $Medium-Gray;
-                            .ul-arrow-up{
-                                background-image: url(./intro-section-with-dropdown-navigation-main/images/icon-arrow-up.svg);
-                                width: 10px;
-                                display: inline-block;
-                                height: 6px;
-                                background-repeat: no-repeat;
-                                margin-left: 5px;
-
-    
-                            }
-                            .ul-arrow-down{
-                                background-image: url(./intro-section-with-dropdown-navigation-main/images/icon-arrow-down.svg);
-                                width: 10px;
-                                display: inline-block;
-                                height: 6px;
-                                background-repeat: no-repeat;
-                                margin-left: 5px;
-
-                        
-                            }
-                        }
-                        .main-ul-two-height{
-                            flex-direction: column;
-                            display: flex;
-                            position: absolute;
-                            li{
-                                margin: 8px 0px 8px 12px;
-                                font-size: 14px;
-
-                                img{
-                                    margin-right: 10px;
-                                }
-                            }
-
-                        }
-                        .main-ul-two{
-                            height: 0;
-                            transition: height .3s;
-                            li{
-                                margin: 8px 0px 8px 12px;
-                                font-size: 14px;
-                                img{
-                                    margin-right: 10px;
-                                }
-                            }
-                        }
-                    }
-            }
-            }
-            .buttons-desktop{
-                display: flex;
-                flex-direction: row;
-                .button-login{
-                    width: 100px;
-                    border: none;
-                    background-color: white;
-                    color: $Medium-Gray;
-                    padding: 10px;
-                    margin: 8px 0 8px 0;
-                    cursor: pointer;
-                }
-                .button-register{
-                    width: 100px;
-                    border: 1px solid $Almost-Black;
-                    background-color: white;
-                    color: $Medium-Gray;
-                    border-radius: 10px;
-                    padding: 10px;
-                    cursor: pointer;
-                }
-                .button-login:hover{
-                    color: $Almost-Black;
-                }
-                .button-register:hover{
-                    color: $Almost-Black;
-                }
-            }
-        }
-        }
         .section-main{
+            display: flex;
             flex-direction: row;
-            padding: 80px;
-            gap: 80px;
-            .section-img{
-                display: none;
-            }
+            padding: 20px;
+            gap:10%;
             .section-info{
-                width: 50%;
+                width: 45%;
+                padding: 40px;
                 align-items: flex-start;
+                justify-content: center;
                 h2{
                     font-size: 60px;
-                    font-weight: bolder;
+                    font-weight: 700;
                 }
                 p{
-                    width: 60%;
+                    margin-top: 30px;
                     text-align: start;
                 }
                 button{
+                    border: 1px solid black;
                     width: 150px;
-                    padding: 20px;
-                    margin: 20px 0 40px 0;
-
+                    padding: 12px;
+                    margin-top: 30px;
                 }
                 .section-info-img{
+                    margin-top: 40px;
+                    
+            img{
+                width:30%;
+                height: 18px;
 
-                    gap: 20px;
-                    img{
-                        min-width: 25%;
-                        max-width: 35%;
-                        height: 22px;
-                    }
+            }
                 }
             }
-            .section-img-desktop{
+            .section-img{
+                display: none;
+            }
+            .section-img2{
                 background-image: url(./intro-section-with-dropdown-navigation-main/images/image-hero-desktop.png);
-                width: 50%;
-                height: auto;
+                width: 45%;
+                height: 80vh;
                 background-repeat: no-repeat;
                 background-size: contain;
                 background-position: center;
             }
+        }
     }
-}
 
 }
+

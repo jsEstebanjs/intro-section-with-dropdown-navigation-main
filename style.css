@@ -189,6 +189,7 @@ body .section-main .section-info button {
   font-family: "Epilogue", sans-serif;
   font-size: 13px;
   font-weight: 500;
+  border: 1px solid black;
 }
 body .section-main .section-info button:hover {
   background-color: hsl(0deg, 0%, 98%);
